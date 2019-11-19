@@ -1,0 +1,9 @@
+<h1><%= @task.title %></h1>
+<ul>
+  <li>Details: <%= @task.details %></li>
+  <li>Completed: <%= @task.completed %></li>
+</ul>
+
+<%= link_to "Remove task", task_path(@task), method: :delete %>
+
+<%= link_to "back to all tesks", tasks_path %>
